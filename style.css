@@ -1,0 +1,256 @@
+:root {
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-white: #fafafa;
+}
+
+body,
+html {
+  margin: 0;
+  font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo {
+  height: 1.75rem;
+  padding-top: 3rem;
+}
+
+main {
+  margin: 4rem 0 2rem 0;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.img-left {
+  padding-right: 8.5px;
+}
+
+.img-right {
+  padding-left: 8.5px;
+}
+
+.img-left,
+.img-right {
+  height: 160px;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2rem 0 2rem;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 2.75rem;
+  font-weight: 900;
+  line-height: 110%;
+  color: var(--color-slate-900);
+  text-align: center;
+}
+
+.hero-description {
+  margin: 1.5rem 0;
+  font-weight: 500;
+  text-align: center;
+  color: var(--color-slate-600);
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  font-weight: 600;
+  border-style: none;
+  color: var(--color-white);
+  font-size: 1rem;
+  border-radius: 29px;
+}
+
+.download-button {
+  width: 193px;
+  height: 56px;
+  background-color: var(--color-cyan-600);
+  margin-bottom: 16px;
+}
+
+.download-button:hover {
+  transition: ease-in 0.2s;
+  cursor: pointer;
+  background-color: #71c0d4;
+}
+
+.last-word {
+  color: var(--color-cyan-300);
+}
+
+.learn-more {
+  width: 161px;
+  height: 56px;
+  background-color: var(--color-purple-600);
+  margin-bottom: 2rem;
+}
+
+.learn-more:hover {
+  transition: ease-in 0.2s;
+  cursor: pointer;
+  background-color: var(--color-purple-300);
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 2rem 4rem 2rem;
+}
+
+.vl {
+  border-left: 1px solid var(--color-slate-600);
+  height: 80px;
+  align-items: center;
+}
+
+.section-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--color-slate-600);
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--color-slate-600);
+  margin-bottom: 4rem;
+}
+
+.section-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.short-description {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 110%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-cyan-600);
+}
+
+.product-heading {
+  margin: 1rem 0 0 0;
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: 0px;
+  line-height: 110%;
+}
+
+.product-description {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 110%;
+  letter-spacing: 0px;
+  font-weight: 500;
+  color: var(--color-slate-600);
+}
+
+/* FOOTER */
+.section-footer {
+  /* background-color: red; */
+}
+
+.page-pagination {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: white;
+}
+
+.vl {
+  width: 2px;
+  align-self: center;
+}
+
+.section-num-2 {
+  margin-bottom: -1.75rem;
+  background-color: var(--color-white);
+  align-self: center;
+}
+
+.footer-display {
+  display: block;
+  background-image: url(/assets/mobile/image-footer.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-display::before {
+  background-color: rgba(77, 150, 169, 0.8);
+}
+
+.footer-content {
+  margin: 0rem 2rem 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem;
+}
+
+.section-2-heading {
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--color-white);
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.section-2-description {
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 500;
+  margin: 1.5rem 0;
+}
+
+.download-btn-footer {
+  width: 193px;
+  height: 56px;
+  background-color: var(--color-purple-600);
+  margin-bottom: 0;
+  align-self: center;
+}
+
+.download-btn-footer:hover {
+  transition: ease-in 0.2s;
+  cursor: pointer;
+  background-color: #b18bdd;
+}
+
+.last-word-footer {
+  color: var(--color-purple-300);
+}
