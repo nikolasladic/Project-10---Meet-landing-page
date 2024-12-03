@@ -10,7 +10,6 @@
 
 body,
 html {
-  margin: 0;
   font-family: "Red Hat Display", Arial, Helvetica, sans-serif;
   width: 100%;
 }
@@ -159,6 +158,7 @@ main {
   line-height: 110%;
   letter-spacing: 4px;
   text-transform: uppercase;
+  text-align: center;
   color: var(--color-cyan-600);
 }
 
@@ -181,9 +181,6 @@ main {
 }
 
 /* FOOTER */
-.section-footer {
-  /* background-color: red; */
-}
 
 .page-pagination {
   height: 100%;
@@ -205,8 +202,8 @@ main {
 }
 
 .footer-display {
-  display: block;
   background-image: url(/assets/mobile/image-footer.jpg);
+  display: block;
   background-position: center;
   background-size: cover;
 }
@@ -253,4 +250,106 @@ main {
 
 .last-word-footer {
   color: var(--color-purple-300);
+}
+
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  main {
+    margin-bottom: 4rem;
+  }
+  .img-left,
+  .img-right {
+    width: 394px;
+    height: 303px;
+  }
+
+  .img-left {
+    padding-right: 1rem;
+  }
+
+  .img-right {
+    padding-left: 1rem;
+  }
+
+  .cta {
+    margin: 4.5rem 9rem 0rem 9rem;
+  }
+
+  .button {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .download-button {
+    margin: 0;
+  }
+
+  .learn-more {
+    margin: 0px;
+  }
+
+  .section-1 {
+    margin: 0rem 2rem 0 2rem;
+    padding-top: 3.5rem;
+  }
+
+  .section-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .content {
+    margin: 4rem 6.25rem 4rem 6.25rem;
+  }
+
+  .footer-display {
+    background-image: url(/assets/tablet/image-footer.jpg);
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1440px) {
+  .header-logo {
+    height: 1.75rem;
+    padding-top: 5rem;
+  }
+
+  /*
+  .main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+  }
+
+  .hero-img {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .cta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-80%);
+    align-items: top;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .img-left,
+  .img-right {
+    max-width: 50%;
+    object-fit: contain;
+  }
+    */
 }
